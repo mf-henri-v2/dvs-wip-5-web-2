@@ -18,7 +18,7 @@ module.exports = {
 
     const inputPath = data.page.inputPath || '';
     // Normalise: strip leading "./" and the trailing ".md".
-    let p = inputPath.replace(/^\.\//, '').replace(/\.md$/, '');
+    let p = inputPath.replace(/^(\.\.\/|\.\/)+/, '').replace(/\.md$/, '');
 
     if (p === 'README') return '/';
     if (p.endsWith('/README')) return '/' + p.slice(0, -'/README'.length) + '/';
