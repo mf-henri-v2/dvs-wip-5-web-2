@@ -146,9 +146,9 @@ module.exports = function (eleventyConfig) {
     dir: {
       input: '..',
       output: '_site',
-      includes: 'docs-site/_includes',
-      layouts: 'docs-site/_layouts',
-      data: 'docs-site/_data'
+      includes: '_includes',
+      layouts: '_layouts',
+      data: '_data'
     }
   };
 };
