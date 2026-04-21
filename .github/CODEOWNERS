@@ -1,0 +1,14 @@
+# CODEOWNERS for the dvs-trust-framework repository
+#
+# These owners are requested for review on every pull request by default.
+# Replace the placeholder handle with the actual OfDIA / DSIT team handle
+# (e.g. @ofdia-maintainers) once the repository has a GitHub organisation.
+
+*                                   @ofdia-maintainers
+
+# Policy text — route to policy reviewers as well
+/trust-framework-1.0/**             @ofdia-maintainers @ofdia-policy
+
+# CI and tooling — route to engineering reviewers
+/.github/**                         @ofdia-maintainers @ofdia-engineering
+/supporting-material/**             @ofdia-maintainers @ofdia-engineering
